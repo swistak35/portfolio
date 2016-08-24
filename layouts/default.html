@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Emilia Karwowska</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-67921395-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <a href="index.php">
+                <div class="logo">
+                    <img src="images/logo.png" />
+                </div>
+            </a>
+            <ul class='sidebar-nav'>
+                <li>
+                    <a href="index.php">Work</a>
+                </li>
+                <li>
+                    <a href="about.php">About me</a>
+                </li>
+            </ul>
+            <p class="email">
+                karwowskaemilia@gmail.com
+            </p>
+            <div class="container-fluid">
+                <div class="row social-links">
+                    <div class="col-sm-4 col-sm-offset-2">
+                        <a href="https://www.facebook.com/emilia.karwowska.3">
+                            <i class="fa fa-facebook-square fa-3x"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://www.linkedin.com/pub/emilia-karwowska/106/87/849">
+                            <i class="fa fa-linkedin-square fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-content-wrapper">
+          <%= yield %>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
