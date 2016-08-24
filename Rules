@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+compile '/projects/*.html' do
+  layout '/project.*'
+end
+
 compile '/**/*.html' do
   layout '/default.*'
 end
@@ -20,6 +24,7 @@ route '/**/*.{html,md}' do
     item.identifier.without_ext + '/index.html'
   end
 end
+
 
 compile '/**/*' do
   write item.identifier.to_s

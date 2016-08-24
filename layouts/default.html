@@ -7,11 +7,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Emilia Karwowska</title>
+    <% if @item[:title].nil? %>
+        <title>Emilia Karwowska</title>
+    <% else %>
+        <title>Emilia Karwowska - <%= @item[:title] %></title>
+    <% end %>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,17 +35,17 @@
     </script>
     <div id="wrapper">
         <div id="sidebar-wrapper">
-            <a href="index.php">
+            <a href="/">
                 <div class="logo">
-                    <img src="images/logo.png" />
+                    <img src="/images/logo.png" />
                 </div>
             </a>
             <ul class='sidebar-nav'>
                 <li>
-                    <a href="index.php">Work</a>
+                    <a href="/">Work</a>
                 </li>
                 <li>
-                    <a href="about.php">About me</a>
+                    <a href="/about/">About me</a>
                 </li>
             </ul>
             <p class="email">
@@ -67,8 +71,8 @@
           <%= yield %>
         </div>
     </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
 
