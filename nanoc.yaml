@@ -88,3 +88,10 @@ checks:
     # E.g.:
     #   exclude_files: ['blog/page']
     exclude_files: []
+
+deploy:
+  default:
+    kind: rsync
+    dst:  "swistak35@idefix.swistak35.com:apps/emilka.idefix.swistak35.com"
+    options: ['-gpPrtvz', '--delete-after', '-e', 'ssh -p 1337']
+
