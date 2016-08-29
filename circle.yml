@@ -8,6 +8,7 @@ tests:
 
 deployment:
   production:
+    branch: master
     commands:
       - bundle exec nanoc compile
       - bundle exec nanoc deploy
