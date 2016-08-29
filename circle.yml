@@ -1,3 +1,13 @@
 machine:
   ruby:
     version: ruby-2.3
+
+tests:
+  override:
+    - echo "OK!"
+
+deployment:
+  production:
+    commands:
+      - bundle exec nanoc compile
+      - bundle exec nanoc deploy
