@@ -1,10 +1,12 @@
 #!/usr/bin/env ruby
 
-compile '/projects/*.html' do
+compile '/*/projects/*.html' do
+  filter :erb
   layout '/project.*'
 end
 
 compile '/**/*.html' do
+  filter :erb
   layout '/default.*'
 end
 
@@ -17,14 +19,14 @@ end
 #  layout '/default.*'
 #end
 
-route '/**/*.{html,md}' do
-  if item.identifier =~ '/index.*'
-    '/index.html'
+route %r{/(pl|en)/.*.(html|md)} do |langs|
+  lang = langs.first
+  if item.identifier =~ "/#{lang}/index.*"
+    "/#{lang}/index.html"
   else
     item.identifier.without_ext + '/index.html'
   end
 end
-
 
 compile '/**/*' do
   write item.identifier.to_s
