@@ -1,6 +1,83 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+            <a href="/<%= lang_code(@item) %>/projects/prowizorka">
+                <div class="project-stripe">
+                    <img src="<%= stripe_path('prowizorka') %>" />
+                    <div class='description'>
+                        <p class='title'>Prowizorka (Quick Fix)</p>
+                        <p class='content'>
+                            Mobile application intended to promote street artists and informal culture of any kind. It can track  locations of your favourite artists and art pieces in the neighbourhood and allows to donate them some money via PayPal.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="/<%= lang_code(@item) %>/projects/trans">
+                <div class="project-stripe">
+                    <img src="<%= stripe_path('trans') %>" />
+                    <div class='description'>
+                        <p class='title'>TRANSition – cross-cultural meditation center</p>
+                        <p class='content'>
+                            Meditation may be a method of self-improvement in different cultures. Main spacial idea of the project was to create universal space focused on the light and sky. It is all about trasnition - the further you go, the more light and air you get. 
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="/<%= lang_code(@item) %>/projects/dyplom">
+                <div class="project-stripe">
+                    <img src="<%= stripe_path('dyplom') %>" />
+                    <div class='description'>
+                        <p class='title'>Senior cohousing</p>
+                        <p class='content'>
+                            The project consist of two infill buildings – multifamily house and service building connected by common yard.  Living in cohousing provides better conditions for eldrely people by combining possibility of living in an independent apartment in the city center with great support from the community of neighbours.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="/<%= lang_code(@item) %>/projects/grid">
+                <div class="project-stripe">
+                    <img src="<%= stripe_path('grid') %>" />
+                    <div class='description'>
+                        <p class='title'>The Grid</p>
+                        <p class='content'>
+                            Prototype of a living unit – shelter for homeless people. It consist of a set of woden elements and can be assembled fast and easily without any additional tools. The grid can be filled with any insulation material available. The whole structure is covered with a waterproof, semitransparent foil.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="/<%= lang_code(@item) %>/projects/zizzz">
+                <div class="project-stripe">
+                    <img src="<%= stripe_path('zizzz') %>" />
+                    <div class='description'>
+                        <p class='title'>Zizzz</p>
+                        <p class='content'>
+                            We present you Zizzz - hotel on demand. Click a button on  your  phone  and  the  nearest  driverless  mobile  bed  will  find  you.  It is small (what else would you need?), cheap (because you pay only for time spent in it), really quick (the firstnearest room would appear as soon as possible) and easy to order (via comfortable phone app).
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="/<%= lang_code(@item) %>/projects/biblioteka">
+                <div class="project-stripe">
+                    <img src="<%= stripe_path('biblioteka') %>" />
+                    <div class='description'>
+                        <p class='title'>Public Library Nowe Żerniki</p>
+                        <p class='content'>
+                            The main concept of the library was to place the collection of books in the center, creating a heart of the building. It is surrounded  by ramps with diverse spaces for readers. Flexible plan allows to arrange various cultural activities.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <a href="/<%= lang_code(@item) %>/projects/doublecrossed">
+                <div class="project-stripe">
+                    <img src="<%= stripe_path('doublecrossed') %>" />
+                    <div class='description'>
+                        <p class='title'>Double-crossed</p>
+                        <p class='content'>
+                            This concept recall the oppressive urban form of Voisin Plan and criticize it by confronting it with existing city and its inhabitants. A new definition of a memorial monument is a farewell - a temporary structure in urban scale. Eighteen black crosses taken directly from Le Corbusier's plan will be floating above the Parisians' heads throwing a shadow on the existing urban fabric. 
+                        </p>
+                    </div>
+                </div>
+            </a>
             <a href="/<%= lang_code(@item) %>/projects/wwu">
                 <div class="project-stripe">
                     <img src="<%= stripe_path('wwu2') %>" />
@@ -85,83 +162,6 @@
                         <p class='title'>ACH! Student Media Center</p>
                         <p class='content'>
                             A restoration project for a modernistic auditorium building in Wrocław. The concept includes creating a cultural center combined with a fully-equipped recording studio and a cafe. Functional changes cause no harm for the preserved form of the building. 
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/<%= lang_code(@item) %>/projects/prowizorka">
-                <div class="project-stripe">
-                    <img src="<%= stripe_path('prowizorka') %>" />
-                    <div class='description'>
-                        <p class='title'>Prowizorka (Quick Fix)</p>
-                        <p class='content'>
-                            Mobile application intended to promote street artists and informal culture of any kind. It can track  locations of your favourite artists and art pieces in the neighbourhood and allows to donate them some money via PayPal.
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/<%= lang_code(@item) %>/projects/trans">
-                <div class="project-stripe">
-                    <img src="<%= stripe_path('trans') %>" />
-                    <div class='description'>
-                        <p class='title'>TRANSition – cross-cultural meditation center</p>
-                        <p class='content'>
-                            Meditation may be a method of self-improvement in different cultures. Main spacial idea of the project was to create universal space focused on the light and sky. It is all about trasnition - the further you go, the more light and air you get. 
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/<%= lang_code(@item) %>/projects/dyplom">
-                <div class="project-stripe">
-                    <img src="<%= stripe_path('dyplom') %>" />
-                    <div class='description'>
-                        <p class='title'>Senior cohousing</p>
-                        <p class='content'>
-                            The project consist of two infill buildings – multifamily house and service building connected by common yard.  Living in cohousing provides better conditions for eldrely people by combining possibility of living in an independent apartment in the city center with great support from the community of neighbours.
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/<%= lang_code(@item) %>/projects/grid">
-                <div class="project-stripe">
-                    <img src="<%= stripe_path('grid') %>" />
-                    <div class='description'>
-                        <p class='title'>The Grid</p>
-                        <p class='content'>
-                            Prototype of a living unit – shelter for homeless people. It consist of a set of woden elements and can be assembled fast and easily without any additional tools. The grid can be filled with any insulation material available. The whole structure is covered with a waterproof, semitransparent foil.
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/<%= lang_code(@item) %>/projects/zizzz">
-                <div class="project-stripe">
-                    <img src="<%= stripe_path('zizzz') %>" />
-                    <div class='description'>
-                        <p class='title'>Zizzz</p>
-                        <p class='content'>
-                            We present you Zizzz - hotel on demand. Click a button on  your  phone  and  the  nearest  driverless  mobile  bed  will  find  you.  It is small (what else would you need?), cheap (because you pay only for time spent in it), really quick (the firstnearest room would appear as soon as possible) and easy to order (via comfortable phone app).
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/<%= lang_code(@item) %>/projects/biblioteka">
-                <div class="project-stripe">
-                    <img src="<%= stripe_path('biblioteka') %>" />
-                    <div class='description'>
-                        <p class='title'>Public Library Nowe Żerniki</p>
-                        <p class='content'>
-                            The main concept of the library was to place the collection of books in the center, creating a heart of the building. It is surrounded  by ramps with diverse spaces for readers. Flexible plan allows to arrange various cultural activities.
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="/<%= lang_code(@item) %>/projects/doublecrossed">
-                <div class="project-stripe">
-                    <img src="<%= stripe_path('doublecrossed') %>" />
-                    <div class='description'>
-                        <p class='title'>Double-crossed</p>
-                        <p class='content'>
-                            This concept recall the oppressive urban form of Voisin Plan and criticize it by confronting it with existing city and its inhabitants. A new definition of a memorial monument is a farewell - a temporary structure in urban scale. Eighteen black crosses taken directly from Le Corbusier's plan will be floating above the Parisians' heads throwing a shadow on the existing urban fabric. 
                         </p>
                     </div>
                 </div>
